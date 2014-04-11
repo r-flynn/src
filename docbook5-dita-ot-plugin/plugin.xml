@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="org.dita.docbook5">
+    <feature extension="dita.xsl.docbook" file="xsl/docbook.xsl" type="file" />
+</plugin>
