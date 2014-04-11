@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
 
-<xsl:import href="/scratch/publishing/publishing-tools/DITA-OT1.5.4/xsl/map2docbook.xsl"/>
+<xsl:import href="map2docbook.xsl"/>
 
 
     <!-- ********************************** -->
