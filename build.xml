@@ -1,0 +1,31 @@
+<project name="build.bookmaker" default="package.plugin">
+  
+  <property name="plugin.name" value="docbook5-dita-ot-plugin" />
+  <property name="output.zip.file" value="../${plugin.name}.zip" />
+  
+  <target name="package.plugin">
+    <output.message message="Create a zip file containint the DITA-OT plugin." />
+    
+    <delete file="${output.zip.file}" failonerror="false" />
+    
+    <zip destfile="${output.zip.file}">
+      <zipfileset dir="docbook5-dita-ot-plugin" prefix="${plugin.name}" />
+    </zip>
+    
+  </target>
+
+  <!-- = = = = = = = = = = = = = = = = =
+          macrodef: output.message          
+         = = = = = = = = = = = = = = = = = -->
+  <macrodef name="output.message" description="Write big messages in the console output.">
+    <attribute name="message" />
+    <sequential>
+      <echo level="info">***************************</echo>
+      <echo level="info" />
+      <echo level="info">@{message}</echo>
+      <echo level="info" />
+      <echo level="info">***************************</echo>
+    </sequential>
+  </macrodef>
+
+</project>
