@@ -3,6 +3,14 @@
 
 <xsl:import href="map2docbook.xsl"/>
 
+    <!-- ********************************** -->
+    <!-- Add a fake template to hold the place of build.original.id.reference.  -->
+    <!-- ********************************** -->
+    
+    <xsl:template name="build.original.id.reference">
+      <xsl:message>Invoking noop template named build.original.id.reference.</xsl:message>
+    </xsl:template>
+
 
     <!-- ********************************** -->
     <!-- Remove xtrf and xtrc attributes from tbody and row elements.  -->

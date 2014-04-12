@@ -9,9 +9,11 @@
 <xsl:import href="software2db.xsl"></xsl:import>
 <xsl:import href="ui2db.xsl"></xsl:import>
 
-
-<xsl:import href="xslt-overrides.xsl"/>
 
+
+<!--
+<xsl:import href="xslt-overrides.xsl"/>
+-->
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
    - DOCUMENT
